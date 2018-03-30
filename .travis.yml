@@ -1,4 +1,5 @@
 ---
+# Travis CI file for ansible-role-kibana
 sudo: required
 language: python
 services:
