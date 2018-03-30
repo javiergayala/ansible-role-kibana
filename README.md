@@ -101,7 +101,7 @@ None.
 
 ## Example Playbook
 
-```ansible
+```yaml
 - hosts: servers
   roles:
      - role: javiergayala.kibana
