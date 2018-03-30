@@ -1,0 +1,15 @@
+---
+- name: Enable Kibana to start at boot
+  systemd:
+    name: kibana
+    state: "{{ kibana_run_state | default('started') }}"
+    enabled: "{{ kibana_enabled | default('yes') }}"
+
+- name: Customize Kibana Configuration
+  lineinfile:
+    path: "{{ kibana_config_file }}"
+    regexp: "^([#]?({{ item.key }}):(.)+)"
+    line: "{{ item.key }}: {{ item.value }}"
+  with_dict: "{{ kibana_params }}"
+  notify:
+    - reload kibana

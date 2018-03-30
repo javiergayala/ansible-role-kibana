@@ -1,0 +1,8 @@
+---
+kibana_home: /usr/share/kibana
+kibana_bin_dir: "{{ kibana_home }}/bin"
+kibana_config_dir: "/etc/kibana"
+kibana_config_file: "{{ kibana_config_dir }}/kibana.yml"
+kibana_data_dir: /var/lib/kibana
+kibana_optimize_dir: "{{ kibana_home }}/optimize"
+kibana_plugins_dir: "{{ kibana_home }}/plugins"

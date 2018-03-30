@@ -1,0 +1,13 @@
+---
+# handlers file for ansible-role-kibana
+- name: reload kibana
+  systemd:
+    name: kibana
+    state: restarted
+  when: (kibana_run_state == 'started')
+
+- name: restart kibana
+  systemd:
+    name: kibana
+    state: restarted
+  when: (kibana_run_state == 'started')

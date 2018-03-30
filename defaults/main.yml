@@ -1,0 +1,8 @@
+---
+# defaults file for ansible-role-kibana
+es_major_version: "6.x"
+es_version: "6.2.3"
+kibana_enabled: "yes"
+kibana_params: {}
+kibana_repo_key: 'https://artifacts.elastic.co/GPG-KEY-elasticsearch'
+kibana_run_state: started

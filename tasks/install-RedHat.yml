@@ -1,0 +1,5 @@
+---
+- name: Install Kibana via YUM
+  yum:
+    name: "kibana-{{ es_version }}"
+    state: present

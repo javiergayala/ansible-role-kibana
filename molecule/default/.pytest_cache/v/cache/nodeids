@@ -1,0 +1,7 @@
+[
+  "tests/test_packages.py::test_package_ver[ansible://instance-kibana-6.2.3]", 
+  "tests/test_services.py::test_services[ansible://instance-kibana]", 
+  "tests/test_files.py::test_files[ansible://instance-/etc/yum.repos.d/elasticsearch-6.x.repo-baseurl = https://artifacts.elastic.co/packages/6.x/yum]", 
+  "tests/test_files.py::test_files[ansible://instance-/etc/kibana/kibana.yml-server.name: instance]", 
+  "tests/test_default.py::test_hosts_file[ansible://instance]"
+]

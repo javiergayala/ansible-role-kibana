@@ -1,0 +1,10 @@
+---
+# tasks file for ansible-role-kibana
+- name: Include OS-specific vars
+  include_vars: "kibana-{{ansible_os_family}}.yml"
+
+- include: "setup-{{ ansible_os_family }}.yml"
+
+- include: "install-{{ ansible_os_family }}.yml"
+
+- include: "config-{{ ansible_os_family }}.yml"
