@@ -1,5 +1,7 @@
 # Ansible Role: Kibana
 
+[![Build Status](https://travis-ci.org/javiergayala/ansible-role-kibana.svg?branch=master)](https://travis-ci.org/javiergayala/ansible-role-kibana)
+
 Installs Kibana on RedHat/CentOS.
 
 This role installs and configures the latest version of Kibana (6.x) from the official [Elastic.co](https://www.elastic.co/) [Repo](https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html#rpm-repo).
