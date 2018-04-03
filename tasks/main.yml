@@ -3,8 +3,12 @@
 - name: Include OS-specific vars
   include_vars: "kibana-{{ansible_os_family}}.yml"
 
-- include: "setup-{{ ansible_os_family }}.yml"
+- name: Include tasks to setup the Kibana repo
+  include: "setup-{{ ansible_os_family }}.yml"
+  when: es_use_repository is undefined or not es_use_repository
 
-- include: "install-{{ ansible_os_family }}.yml"
+- name: Include tasks to install Kibana
+  include: "install-{{ ansible_os_family }}.yml"
 
-- include: "config-{{ ansible_os_family }}.yml"
+- name: Insclude tasks to configure Kibana
+  include: "config-{{ ansible_os_family }}.yml"

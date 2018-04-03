@@ -21,6 +21,12 @@ es_major_version: "6.x"
 The version of Kibana should always match the verion of Elasticsearch in your ELK stack.  This represents the major version of Elasticsearch.
 
 ```yaml
+es_use_repository: undefined
+```
+
+This value is not defined anywhere in the role.  I have documented it here because it is a value usually defined in the [elastic.elasticsearch](https://github.com/elastic/ansible-elasticsearch) role by [Elastic.co](https://www.elastic.co/).  If you are installing this Kibana role alongside the `elastic.elasticsearch` role, then that role will typically install the repository for you.  Allowing this Kibana role to also install the repository will slightly alter the repo file which leads to the role no longer producing an idempotent result.  However, if you tell the `elastic.elasticsearch` role NOT to install the repository, then this Kibana role *will* install the repository in order to access the software.
+
+```yaml
 es_version: "6.2.3"
 ```
 
