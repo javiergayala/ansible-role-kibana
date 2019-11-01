@@ -1,6 +1,6 @@
 # Ansible Role: Kibana
 
-[![Build Status](https://travis-ci.org/javiergayala/ansible-role-kibana.svg?branch=master)](https://travis-ci.org/javiergayala/ansible-role-kibana)
+[![Build Status](https://travis-ci.org/javiergayala/ansible-role-kibana.svg?branch=master)](https://travis-ci.org/javiergayala/ansible-role-kibana) ![Ansible Role](https://img.shields.io/ansible/role/24682)
 
 Installs Kibana on RedHat/CentOS.
 
