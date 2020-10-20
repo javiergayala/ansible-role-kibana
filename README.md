@@ -1,6 +1,6 @@
 # Ansible Role: Kibana
 
-[![Build Status](https://travis-ci.org/javiergayala/ansible-role-kibana.svg?branch=master)](https://travis-ci.org/javiergayala/ansible-role-kibana) ![Ansible Role](https://img.shields.io/ansible/role/24682?logo=ansible) ![Ansible Role](https://img.shields.io/ansible/role/d/24682) ![Ansible Quality Score](https://img.shields.io/ansible/quality/24682)
+[![Build Status](https://travis-ci.org/javiergayala/ansible-role-kibana.svg?branch=master)](https://travis-ci.org/javiergayala/ansible-role-kibana) ![Ansible Role](https://img.shields.io/ansible/role/24682?logo=ansible) ![Ansible Role](https://img.shields.io/ansible/role/d/24682) ![Ansible Quality Score](https://img.shields.io/ansible/quality/24682) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/javiergayala/ansible-role-kibana?sort=semver) ![GitHub Release Date](https://img.shields.io/github/release-date/javiergayala/ansible-role-kibana)
 
 Installs Kibana on RedHat/CentOS.
 
